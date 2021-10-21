@@ -15,8 +15,8 @@ public class Calculator {
         operand2 = in.nextInt();
 
         System.out.print("Введите операцию(+, -, \u00d7, \u00f7): ");
-        String sign = in.nextLine();
-        
+        String sign = in.next();
+
         switch(sign) {
             case "+":
                 System.out.print("Результат операции: "+(operand1 + operand2));
