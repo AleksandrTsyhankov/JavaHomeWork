@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Bingo {
     public static void main(String[] args) {
         Random random = new Random();
-        int upperbound = 5;
+        int upperbound = 101;
         int hiddenNumber = random.nextInt(upperbound);
         int userNumber = 0;
 
@@ -17,7 +17,7 @@ public class Bingo {
                 "Для выхода из игры введите \"-1\" " +
                 "\n");
 
-        for(int counter = 1; counter <= 5; counter++) {
+        for(int counter = 1; counter <= 100; counter++) {
 
             System.out.print((counter) + "-я попытка: ");
             userNumber = in.nextInt();
@@ -31,7 +31,7 @@ public class Bingo {
                 System.out.println("Поздравляем! Вы угадали число с " + (counter) + " попытки");
                 break;
             }
-            else if(userNumber != hiddenNumber && counter < 20) {
+            else if(userNumber != hiddenNumber && counter < 100) {
                 String answerToUser =  (userNumber < hiddenNumber)
                         ? "Загаданное число больше того, которое Вы ввели"
                         : "Загаданное число меньше того, которое Вы ввели";
