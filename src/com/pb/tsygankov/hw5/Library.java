@@ -22,16 +22,16 @@ public class Library {
             System.out.println(" ФИО: "+readers[i].getFio()+", Номер: "+readers[i].getReaderNumber()+", Факультет: "+readers[i].getFaculty()+", Дата рождения: "+readers[i].getDateOfBirth()+", Номер телефона: "+readers[i].getPhoneNumber());
         }
 
-        String[] authors = new String[3];
-        authors[0] = books[0].getTitle();
-        authors[1] = books[1].getTitle();
-        authors[2] = books[2].getTitle();
+        String[] titles = new String[3];
+        titles[0] = books[0].getTitle();
+        titles[1] = books[1].getTitle();
+        titles[2] = books[2].getTitle();
 
         readers[0].takeBooks(books.length);
         readers[0].returnBooks(books.length);
 
-        readers[0].takeBooks(authors);
-        readers[0].returnBooks(authors);
+        readers[0].takeBooks(titles);
+        readers[0].returnBooks(titles);
 
         readers[0].takeBooks(books);
         readers[0].returnBooks(books);

@@ -63,21 +63,21 @@ public class Reader {
         System.out.println(fio+" вернул "+booksCount+" книгу(и).");
     }
 
-    public void takeBooks(String[] authors) {
+    public void takeBooks(String[] titles) {
         String books = "";
 
-        for (int i = 0; i < authors.length; i++) {
-            books += authors[i]+", ";
+        for (int i = 0; i < titles.length; i++) {
+            books += titles[i]+", ";
         }
         books = books.substring(0, books.length()-2)+".";
         System.out.println(fio + " взял книгу(и): " + books);
     }
 
-    public void returnBooks(String[] authors) {
+    public void returnBooks(String[] titles) {
         String books = "";
 
-        for (int i = 0; i < authors.length; i++) {
-            books += authors[i] +  ", ";
+        for (int i = 0; i < titles.length; i++) {
+            books += titles[i] +  ", ";
         }
         books = books.substring(0, books.length()-2)+".";
         System.out.println(fio + " вернул книгу(и): " + books);
